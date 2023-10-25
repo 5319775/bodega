@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bodega.css">
+    <title>Gestión de Bodega</title>
+</head>
+<body>
+    <div id="login">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="loginButton">Iniciar Sesión</button>
+    </div>
+    <div id="app" style="display: none;">
+        <h1>Gestión de Bodega</h1>
+        <div id="productForm">
+            <h2>Registrar Producto</h2>
+            <input type="text" id="productName" placeholder="Nombre">
+            <input type="text" id="productReference" placeholder="Referencia">
+            <input type="number" id="productQuantity" placeholder="Cantidad">
+            <input type="number" id="productValue" placeholder="Valor">
+            <input type="text" id="productDescription" placeholder="Descripción">
+            <input type="radio" id="zona1" name="zona" value="1"> Zona 1 (Productos malos)
+            <input type="radio" id="zona2" name="zona" value="2"> Zona 2 (Productos varios)
+            <input type="radio" id="zona3" name="zona" value="3"> Zona 3 (Productos de hogar)
+            <input type="radio" id="zona4" name="zona" value="4"> Zona 4 (Productos tecnológicos)
+            <button id="registerButton">Registrar Producto</button>
+        </div>
+        <div id="productList">
+            <h2>Lista de Productos</h2>
+        </div>
+        <div id="productCounts">
+            <h2>Cantidad de Productos por Zona</h2>
+        </div>
+        <button id="logoutButton">Cerrar Sesión</button>
+    </div>
+    <script src="/js/bodega.js"></script>
+</body>
+</html>
